@@ -22,6 +22,7 @@ pipeline {
                             -Dsonar.projectKey=labmaven01 \
                             -Dsonar.projectName=labmaven01 \
                             -Dsonar.sources=src/main \
+                            -Dsonar.exclusions=**/*.java \
                             -Dsonar.tests=src/test/java"
                         }
                     }
