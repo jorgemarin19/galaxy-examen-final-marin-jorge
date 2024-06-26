@@ -21,7 +21,8 @@ pipeline {
                             sh "${scannerHome}/bin/sonar-scanner \
                             -Dsonar.projectKey=labmaven01 \
                             -Dsonar.projectName=labmaven01 \
-                            -Dsonar.sources=src/main \                    
+                            -Dsonar.sources=src/main \    
+                            -Dsonar.java.binaries=build/classes \
                             -Dsonar.tests=src/test/java"
                         }
                     }
